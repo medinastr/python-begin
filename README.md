@@ -1,0 +1,1 @@
+This repsitory has my beggining on python.

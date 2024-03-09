@@ -4,7 +4,7 @@
 lista = ['banana', 'rice']
 
 while True:
-    print("0 - get out")
+    print("\n0 - get out")
     print("1 - insert")
     print("2 - remove")
     print("3 - show the list")
@@ -15,12 +15,14 @@ while True:
     elif answer == '1':
         answer_insert = input("What do you want to insert? ")
         lista.append(answer_insert)
-        print(lista)
     elif answer == '2':
         answer_remove = int(input("Which index do you want to remove? "))
-        del lista[answer_remove]
-        print(lista)
+        try :
+            del lista[answer_remove]
+        except :
+            print("There is nothing in this index.")
     elif answer == '3':
-        print(lista)
+        for element in enumerate(lista) :
+            print(element)
     else:
         print("Invalid option. Please choose a valid option (0-3).")
