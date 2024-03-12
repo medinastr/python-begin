@@ -1,6 +1,4 @@
-# aux = input("Enter yout CPF: ")
-# cpf = int(aux)
-cpf = "74682489070"
+cpf = input("Enter yout CPF: ")
 
 digit1 = 0
 mult1 = 10
@@ -19,3 +17,10 @@ digit1 = digit1 if digit1 <= 9 else 0
 
 digit2 = ((digit2 + digit1 * 2) * 10) % 11
 digit2 = digit2 if digit2 <= 9 else 2
+
+cpf_validation = cpf[:9] + str(digit1) + str(digit2)
+
+if cpf_validation == cpf :
+    print("CPF ok.")
+else :
+    print("Invalid CPF.")
