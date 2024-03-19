@@ -1,1 +1,1 @@
-This repository has my beggining on python.
+This repository has my beginning on python with some exercises I did.
